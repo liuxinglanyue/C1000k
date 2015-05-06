@@ -93,7 +93,7 @@ int main() {
         exit(-1);
     }
 
-    // 到Cpu 核心数目
+    // 得到Cpu 核心数目
     cpu_num = sysconf(_SC_NPROCESSORS_CONF) * 1;
 
     for (int i = 1; i < cpu_num; ++i) {
